@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import "./MealDetails.scss"; // قم بربط الملف SCSS
+import "./MealDetails.scss"; 
 
 const MealDetails = () => {
   const [meal, setMeal] = useState(null);
