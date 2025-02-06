@@ -48,7 +48,7 @@
   }
   
   .meal-img {
-    width: 30%;  /* تحديد حجم الصورة */
+    width: 30%; 
     max-height: 400px;
     object-fit: cover;
     border-radius: 10px;
@@ -83,7 +83,7 @@
     background-color: #f3f4f6;
     padding: 1rem;
     border-radius: 8px;
-    max-height: none;  /* إلغاء الـ Scroll */
+    max-height: none;
     overflow-y: auto;
   }
   
