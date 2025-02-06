@@ -11,8 +11,8 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   overflow: visible;
   margin-top: 100px;
-  width: 100%; /* تأكد من أن الكرت يأخذ عرض الشاشة بالكامل */
-  max-width: 370px; /* تحديد أقصى عرض للكرت */
+  width: 100%; 
+  max-width: 370px; 
 
   &:hover {
     transform: scale(1.05);
@@ -21,63 +21,62 @@
 
   .relative {
     position: absolute;
-    top: -70px; /* نقل الصورة لأعلى بمقدار 100px */
+    top: -70px;
 
     img {
       transition: transform 0.5s ease-in-out;
-      border-radius: 50%; /* صورة دائرية */
-      width: 270px; /* حجم الصورة */
-      height: 270px; /* حجم الصورة */
-      object-fit: cover; /* تغطية الصورة بشكل صحيح */
-      border: 4px solid white; /* إضافة حدود بيضاء للصورة */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة شادو للصورة */
+      border-radius: 50%; 
+      width: 270px;
+      height: 270px;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
       &:hover {
-        transform: rotate(360deg); /* تدوير الصورة 360 درجة عند الهوفر */
+        transform: rotate(360deg);
       }
     }
   }
 
   h2 {
-    margin-top: 200px; /* مسافة فوق العنوان (لتعويض خروج الصورة) */
-    font-size: 1.5rem; /* حجم الخط */
-    font-weight: bold; /* خط عريض */
-    text-align: center; /* محاذاة النص في المنتصف */
+    margin-top: 200px;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    text-align: center;
   }
 
   button {
-    margin-top: 12px; /* مسافة فوق الزر */
-    background-color: rgb(33, 186, 117); /* لون الخلفية */
-    color: white; /* لون النص */
-    padding: 8px 16px; /* مساحة داخلية */
-    border: none; /* إزالة الحدود */
-    border-radius: 30px; /* زوايا مدورة */
-    cursor: pointer; /* تغيير شكل المؤشر */
-    transition: background-color 0.3s ease-in-out; /* تأثير سلس لتغيير اللون */
+    margin-top: 12px;
+    background-color: rgb(33, 186, 117);
+    color: white;
+    padding: 8px 16px; 
+    border: none;
+    border-radius: 30px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out;
 
     &:hover {
-      background-color: darken(rgb(33, 186, 117), 10%); /* تغميق اللون عند الهوفر */
+      background-color: darken(rgb(33, 186, 117), 10%); 
     }
   }
 }
 
-/* استجابة الشاشات الصغيرة */
 @media (max-width: 768px) {
   .card {
-    margin-top: 60px; /* تقليل المسافة العليا على الشاشات الصغيرة */
-    margin-left: 10px; /* تقليل المسافة الجانبية */
-    width: 100%; /* الكرت يأخذ العرض الكامل */
-    max-width: 90%; /* تحديد الحد الأقصى لعرض الكرت على الأجهزة الصغيرة */
+    margin-top: 60px; 
+    margin-left: 10px; 
+    width: 100%; 
+    max-width: 90%;
   }
 
   .relative img {
-    width: 200px; /* تقليل حجم الصورة */
-    height: 200px; /* تقليل حجم الصورة */
+    width: 200px; 
+    height: 200px; 
   }
 
   h2 {
-    font-size: 1.2rem; /* تقليل حجم الخط على الشاشات الصغيرة */
-    margin-top: 150px; /* تقليل المسافة العلوية */
+    font-size: 1.2rem; 
+    margin-top: 150px; 
   }
 
   button {
