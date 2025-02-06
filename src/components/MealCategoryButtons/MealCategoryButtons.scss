@@ -6,22 +6,21 @@
   padding-bottom: 10px;
   border-bottom: solid 1px rgb(214, 214, 214);
 
-  /* العنوان */
   .title {
-    font-family: 'Pacifico', cursive; /* تأكيد استخدام الخط */
-    font-size: 2rem; /* حجم الخط كبير */
-    font-weight: bold; /* خط عريض */
-    margin-bottom: 20px; /* مسافة أسفل العنوان */
+    font-family: 'Pacifico', cursive; 
+    font-size: 2rem; 
+    font-weight: bold;
+    margin-bottom: 20px; 
     color:#F29724 ;
   }
 
   .dropdown-toggle {
-    display: none; /* إخفاء زر القائمة المنسدلة على الشاشات الكبيرة */
+    display: none; 
     padding: 10px 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1); /* border رمادي خفيف */
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 25px;
-    background-color: transparent; /* خلفية شفافة */
-    color: black; /* لون النص أسود */
+    background-color: transparent; 
+    color: black;
     font-size: 1rem;
     cursor: pointer;
     margin-bottom: 10px;
@@ -29,7 +28,7 @@
 
     &:hover {
       background-color: white; /* خلفية بيضاء عند الهوفر */
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* شادو قوي عند الهوفر */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
     }
   }
 
@@ -41,57 +40,56 @@
 
     .category-button {
       padding: 10px 20px;
-      border: 1px solid rgba(0, 0, 0, 0.1); /* border رمادي خفيف */
+      border: 1px solid rgba(0, 0, 0, 0.1); 
       border-radius: 25px;
-      background-color: transparent; /* خلفية شفافة */
-      color: black; /* لون النص أسود */
+      background-color: transparent;
+      color: black; 
       font-size: 1rem;
       cursor: pointer;
       transition: all 0.3s ease-in-out;
 
       &:hover {
-        background-color: white; /* خلفية بيضاء عند الهوفر */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* شادو قوي عند الهوفر */
+        background-color: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
       }
 
       &.active {
-        background-color: black; /* خلفية سوداء للزر النشط */
-        color: white; /* لون النص أبيض */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* شادو قوي للزر النشط */
+        background-color: black;
+        color: white; 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
       }
     }
   }
 
-  /* تحويل الأزرار إلى قائمة منسدلة على الشاشات الصغيرة */
   @media (max-width: 768px) {
     .dropdown-toggle {
-      display: block; /* إظهار زر القائمة المنسدلة على الشاشات الصغيرة */
+      display: block; 
     }
 
     .categories-list {
-      display: none; /* إخفاء القائمة الافتراضية على الشاشات الصغيرة */
+      display: none;
       flex-direction: column;
-      width: 100%; /* جعل القائمة عريضة */
-      background-color: white; /* خلفية بيضاء للقائمة */
-      border-radius: 10px; /* زوايا مدورة */
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* إضافة ظل للقائمة */
-      padding: 10px; /* إضافة مساحة داخلية */
-      max-height: 300px; /* جعل القائمة أطول */
-      overflow-y: auto; /* إضافة scroll إذا كانت القائمة طويلة */
+      width: 100%;
+      background-color: white; 
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+      padding: 10px; 
+      max-height: 300px;
+      overflow-y: auto;
 
       .category-button {
         width: 100%;
         text-align: center;
         margin-bottom: 10px;
-        border-radius: 10px; /* زوايا مدورة للأزرار */
+        border-radius: 10px;
 
         &:hover {
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* شادو قوي عند الهوفر */
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
         }
       }
 
       &.open {
-        display: flex; /* إظهار القائمة عند فتحها */
+        display: flex;
       }
     }
   }
