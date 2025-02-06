@@ -1,0 +1,29 @@
+// Sidebar.scss
+
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 3px;
+  
+    &.blue {
+      background-color: #F29724;
+      color: white;
+  
+      &:hover {
+        background-color: #F29724;
+      }
+    }
+  
+    &.gray {
+      background-color: #e5e7eb;
+      color: #4b5563;
+  
+      &:hover {
+        background-color: #d1d5db;
+      }
+    }
+  }
+  
