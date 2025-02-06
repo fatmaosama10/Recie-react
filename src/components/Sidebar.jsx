@@ -1,5 +1,5 @@
 import React from "react";
-import recieImage from "../assets/recie.png"; // تأكد من صحة المسار وفقًا لهيكلة المشروع
+import recieImage from "../assets/recie.png"; 
 import "./Sidebar.scss"; // رابط ملف SCSS
 
 const Sidebar = () => {
