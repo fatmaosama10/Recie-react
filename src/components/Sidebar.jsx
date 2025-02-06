@@ -1,6 +1,6 @@
 import React from "react";
 import recieImage from "../assets/recie.png"; 
-import "./Sidebar.scss"; // رابط ملف SCSS
+import "./Sidebar.scss"; 
 
 const Sidebar = () => {
   return (
